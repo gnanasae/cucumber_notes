@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.amazon.test.MyListeners"></listener>
+	</listeners>
+	<test thread-count="6" name="Test" parallel="classes">
+		<classes>
+			<class name="com.amazon.test.RegistrationPageTest" />
+			<class name="com.amazon.test.LoginTest" />
+			<class name="com.amazon.test.PlacingOrdersTest" />
+			<class name="com.amazon.test.CartPageTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
